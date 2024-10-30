@@ -1,0 +1,75 @@
+bank data prep 
+
+objective 1
+
+Import & QA the data
+Your first objective is to import & join two customer data tables, then remove duplicate rows & columns and fill in missing values.
+
+Task
+Import the data from both tabs in the "Bank_Churn_Messy" Excel file
+
+Use a left join to join "Account_Info" to "Customer_Info" using the CustomerID column
+
+Check for and remove duplicate rows and columns
+
+
+
+objective 2
+Clean the data
+Your second objective is to clean the data by fixing inconsistencies in labeling, handling erroneous values, and fixing currency fields.
+
+Task
+Check the data types for each column and make any necessary fixes
+
+Show hint
+Replace missing values in categorical columns with "MISSING", and missing values in numeric columns with the median
+
+Show hint
+Profile the numeric columns in the data. Are there any extreme or non-sensical values? If so, impute them with the median of the column.
+
+Show hint
+Combine any variations in country names in the "Geography" column to a single value per country
+
+Show hint
+
+
+Objective 3
+Explore the data
+Your third objective is to explore the target variable and look at feature-target relationships for categorical and numeric fields.
+Task
+Build a bar chart displaying the count of churners (Exited=1) vs. non-churners (Exited=0)
+
+Show hint
+Explore the categorical variables vs. the target, and look at the percentage of Churners by “Geography” and “Gender”
+
+Show hint
+Build box plots for each numeric field, broken out by churners vs. non-churners
+
+Show hint
+Build histograms for each numeric field, broken out by churners vs. non-churners
+
+Show hint
+
+
+Objective 4
+Prepare the data for modeling
+Your final objective is to prepare the data for modeling through feature selection, feature engineering, and data splitting.
+Task
+Create a new dataset that excludes any columns that aren’t be suitable for modeling
+
+Show hint
+Create dummy variables for categorical fields
+
+Show hint
+Create a new “balance_v_income” feature, which divides a customer’s bank balance by their estimated salary, then visualize that feature vs. churn status
+
+Show hint
+
+
+Final Step
+Final Project Question
+Answer the following question to validate your completed project.
+How many rows get dropped when removing duplicates?
+Type your answer here
+Enter numbers only (no commas or special characters)
+
